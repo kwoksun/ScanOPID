@@ -1,0 +1,17 @@
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\bin\Debug\ScanOPID.exe.config
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\bin\Debug\ScanOPID.exe
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\bin\Debug\ScanOPID.pdb
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.Properties.Resources.resources
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.csproj.GenerateResource.cache
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.csproj.CoreCompileInputs.cache
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.exe
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.pdb
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.frmMachineType.resources
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.frmMainForm.resources
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.frmSetupPort.resources
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\bin\Debug\ScanOPID.exe.manifest
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\bin\Debug\ScanOPID.application
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.TrustInfo.xml
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.exe.manifest
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.application
+C:\Users\5105244421\source\repos\ScanOPID\ScanOPID\obj\Debug\ScanOPID.csprojAssemblyReference.cache

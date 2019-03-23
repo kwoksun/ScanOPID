@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="ScanOPID.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="Drive.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="ScanOPID" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,62 +41,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScanOPID.exe" size="1035184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScanOPID.exe" size="1116592">
       <assemblyIdentity name="ScanOPID" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SpAi2rSfB0L4Reyv7ejrbUe+yi23ninUz3ta7XJEXtA=</dsig:DigestValue>
+        <dsig:DigestValue>to4UZO3kRVTV4lrJY7tb9ccFwr74xd0vvVG79ffGWIU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Drive.ico" size="10134">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GRo5w6Zy5mRdTTNMSTrsjWjPJ3tUTNXc9UV18RWcbXk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\Busy.jpg" size="9648">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gyEivb3J72WK62RXRUpU1cRRiHXbAio5C50Fg3Qzn94=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\Drive.ico" size="10134">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GRo5w6Zy5mRdTTNMSTrsjWjPJ3tUTNXc9UV18RWcbXk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\NG.jpg" size="8691">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sFY9fsOBagXqivrWQoWZyKsvYNc9ugzmvskY9GXqLdk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\OK.jpg" size="8408">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pZByQ9zwZ/BpfGubZhNrEdmB4/PGshDmsMGW3N7Hpms=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="ScanOPID.exe.config" size="187">
     <hash>
       <dsig:Transforms>

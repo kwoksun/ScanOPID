@@ -214,7 +214,7 @@
             this.cbHandshake.Size = new System.Drawing.Size(121, 28);
             this.cbHandshake.TabIndex = 13;
             // 
-            // SetupPort
+            // FrmSetupPort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,11 +234,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SetupPort";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Name = "FrmSetupPort";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SetupPort";
             this.Load += new System.EventHandler(this.SetupPort_Load);
             this.ResumeLayout(false);

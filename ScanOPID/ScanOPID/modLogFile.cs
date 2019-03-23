@@ -76,7 +76,6 @@ namespace ScanOPID
             catch (IOException e)
             {
                 mf.status.Text = "Create Log NG";
-                mf.status.Location = new System.Drawing.Point(19, 13);
                 MessageBox.Show("日志写入失败！" + e.Message);
             }
             finally

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScanOPID.exe" size="1034160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScanOPID.exe" size="127920">
       <assemblyIdentity name="ScanOPID" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y1bA9FwMvIJ/cc6Q/2y9vP8Rz2TupeR8vpU0BNMrRYE=</dsig:DigestValue>
+        <dsig:DigestValue>rwmX+7A2Xxr2FXpa3gGceBlhufS2S2GAk26naQHs3Go=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,43 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GRo5w6Zy5mRdTTNMSTrsjWjPJ3tUTNXc9UV18RWcbXk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\Busy.jpg" size="9648">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gyEivb3J72WK62RXRUpU1cRRiHXbAio5C50Fg3Qzn94=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\Drive.ico" size="10134">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GRo5w6Zy5mRdTTNMSTrsjWjPJ3tUTNXc9UV18RWcbXk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\NG.jpg" size="8691">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sFY9fsOBagXqivrWQoWZyKsvYNc9ugzmvskY9GXqLdk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resource\OK.jpg" size="8408">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pZByQ9zwZ/BpfGubZhNrEdmB4/PGshDmsMGW3N7Hpms=</dsig:DigestValue>
+      <dsig:DigestValue>i9uAstm9m0G4kEiHZeXC29nAlMd3m9oJvIpurzKTvss=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ScanOPID.exe.config" size="187">

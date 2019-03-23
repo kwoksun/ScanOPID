@@ -64,7 +64,6 @@ namespace ScanOPID
             {
                 MessageBox.Show("上传数据失败！" + e.Message);
                 mf.status.Text = "Update Data NG";
-                mf.status.Location = new System.Drawing.Point(14, 13);
                 throw (ModFileWriteException)(new Exception(e.Message));
             }
             finally

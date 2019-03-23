@@ -50,7 +50,6 @@ namespace ScanOPID
             else
             {
                 status.Text = s;
-                status.Location = new Point(54, 13);
             }
         }
         //串口接收缓冲区有数据时执行
@@ -65,7 +64,8 @@ namespace ScanOPID
                 string opid = data.Substring(0, 15);
                 DataUpdate(opid);
                 //主界面Judgement更新
-                JudgementBox.Image = Judgement.Images[1];
+                //JudgementBox.Image = Judgement.Images[1];
+                JudgementBox.Image = Properties.Resources.OK;
                 //上传数据
                 barcode.WriteBarCodeFile(opid, "1");
                 //写Log
@@ -75,7 +75,8 @@ namespace ScanOPID
             catch(ArgumentOutOfRangeException ex)
             {
                 DataUpdate(data);
-                JudgementBox.Image = Judgement.Images[2];
+                //JudgementBox.Image = Judgement.Images[2];
+                JudgementBox.Image = Properties.Resources.NG;
                 ChangeStatus("Scan NG");
                 log.CreateFile();
                 log.WriteLogFile(ModLogFile.LogType.Erro, data);
@@ -83,11 +84,13 @@ namespace ScanOPID
             }
             catch (ModFileWriteException)
             {
-                JudgementBox.Image = Judgement.Images[2];
+                //JudgementBox.Image = Judgement.Images[2];
+                JudgementBox.Image = Properties.Resources.NG;
             }
             catch(Exception)
             {
-                JudgementBox.Image = Judgement.Images[2];
+                //JudgementBox.Image = Judgement.Images[2];
+                JudgementBox.Image = Properties.Resources.NG;
             }
         }
         //主窗口加载时执行
@@ -107,7 +110,6 @@ namespace ScanOPID
                 ConnectStatus.Text = "未连接";
                 ConnectStatus.ForeColor = Color.Red;
                 status.Text = "Conn Port NG";
-                status.Location = new Point(24, 13);
                 MessageBox.Show(ex.Message);
             }
             
@@ -120,6 +122,18 @@ namespace ScanOPID
                 Scanner.DiscardInBuffer();
                 Scanner.Close();
             }
+        }
+        //状态变更时自动更新文字位置
+        private void UpdateStatusLocation(object sender, EventArgs e)
+        {
+            int marginX = StatusGB.Width - status.Width;
+            int marginY = StatusGB.Height - status.Height;
+            status.Location = new Point(marginX / 2, marginY / 2 + StatusGB.Margin.Top);
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -51,7 +51,7 @@ namespace ScanOPID
         public void WriteBarCodeFile(string opid, string judgement)
         {
             date = DateTime.Now.ToLocalTime();
-            string content = opid + "," + judgement + "," + date.ToString("yyyy-MM-dd HH:mm:ss") + "\r\n";
+            string content = opid + ",NULL,NULL,NULL,NULL,NULL," + judgement + "," + date.ToString("yyyy/MM/dd HH:mm:ss") + "\r\n";
             byte[] myByte = Encoding.UTF8.GetBytes(content);
             FileStream fs = null;
             try

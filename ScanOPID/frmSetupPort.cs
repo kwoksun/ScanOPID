@@ -66,6 +66,8 @@ namespace ScanOPID
                 mf.Scanner.DiscardOutBuffer();
                 mf.Scanner.Close();
             }
+            Properties.Settings.Default.ComPort = cbPortName.Text;
+            Properties.Settings.Default.Save();
             //串口属性按照选定值赋值
             mf.Scanner.PortName = cbPortName.Text;
             mf.Scanner.BaudRate = Convert.ToInt32(cbBaudRate.Text);
@@ -91,6 +93,7 @@ namespace ScanOPID
                 mf.Scanner.Open();
                 mf.ConnectStatus.Text = "已连接";
                 mf.ConnectStatus.ForeColor = Color.Black;
+                mf.status.Text = "Normal";
             }
             catch (ArgumentException ex)
             {

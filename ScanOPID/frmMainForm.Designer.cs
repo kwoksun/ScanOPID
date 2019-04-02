@@ -52,6 +52,9 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SetupPortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Countlabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.OPIDBox.SuspendLayout();
             this.InfoBox.SuspendLayout();
             this.StatusGB.SuspendLayout();
@@ -60,6 +63,7 @@
             this.JudgeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JudgementBox)).BeginInit();
             this.MainMenu.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // OPIDBox
@@ -68,29 +72,30 @@
             this.OPIDBox.Controls.Add(this.OPIDlabel);
             this.OPIDBox.Location = new System.Drawing.Point(12, 498);
             this.OPIDBox.Name = "OPIDBox";
-            this.OPIDBox.Size = new System.Drawing.Size(920, 112);
+            this.OPIDBox.Size = new System.Drawing.Size(592, 112);
             this.OPIDBox.TabIndex = 1;
             this.OPIDBox.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 42F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(141, 27);
+            this.label3.Font = new System.Drawing.Font("Cambria", 38F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(7, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 65);
+            this.label3.Size = new System.Drawing.Size(134, 59);
             this.label3.TabIndex = 3;
             this.label3.Text = "OPID";
             // 
             // OPIDlabel
             // 
             this.OPIDlabel.AutoSize = true;
-            this.OPIDlabel.Font = new System.Drawing.Font("幼圆", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.OPIDlabel.Location = new System.Drawing.Point(352, 32);
+            this.OPIDlabel.Font = new System.Drawing.Font("幼圆", 38F);
+            this.OPIDlabel.Location = new System.Drawing.Point(147, 36);
             this.OPIDlabel.Name = "OPIDlabel";
-            this.OPIDlabel.Size = new System.Drawing.Size(472, 56);
+            this.OPIDlabel.Size = new System.Drawing.Size(438, 51);
             this.OPIDlabel.TabIndex = 1;
             this.OPIDlabel.Text = "0000000000000000";
+            this.OPIDlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -150,7 +155,7 @@
             // 
             this.status.AutoSize = true;
             this.status.Font = new System.Drawing.Font("宋体", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.status.Location = new System.Drawing.Point(139, 26);
+            this.status.Location = new System.Drawing.Point(150, 26);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(137, 37);
             this.status.TabIndex = 4;
@@ -171,7 +176,7 @@
             this.ConnectStatus.AutoSize = true;
             this.ConnectStatus.Font = new System.Drawing.Font("宋体", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ConnectStatus.ForeColor = System.Drawing.Color.Black;
-            this.ConnectStatus.Location = new System.Drawing.Point(139, 27);
+            this.ConnectStatus.Location = new System.Drawing.Point(153, 27);
             this.ConnectStatus.Name = "ConnectStatus";
             this.ConnectStatus.Size = new System.Drawing.Size(131, 37);
             this.ConnectStatus.TabIndex = 3;
@@ -190,7 +195,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(88, 26);
+            this.label7.Location = new System.Drawing.Point(92, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(253, 37);
             this.label7.TabIndex = 2;
@@ -200,7 +205,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 42F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 17);
+            this.label1.Location = new System.Drawing.Point(70, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(309, 65);
             this.label1.TabIndex = 2;
@@ -215,7 +220,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 42F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(88, 17);
+            this.label2.Location = new System.Drawing.Point(85, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(279, 65);
             this.label2.TabIndex = 1;
@@ -273,12 +278,44 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Countlabel);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Location = new System.Drawing.Point(610, 498);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(322, 112);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            // 
+            // Countlabel
+            // 
+            this.Countlabel.AutoSize = true;
+            this.Countlabel.Font = new System.Drawing.Font("幼圆", 38F);
+            this.Countlabel.Location = new System.Drawing.Point(190, 36);
+            this.Countlabel.Name = "Countlabel";
+            this.Countlabel.Size = new System.Drawing.Size(126, 51);
+            this.Countlabel.TabIndex = 4;
+            this.Countlabel.Text = "0000";
+            this.Countlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 38F, System.Drawing.FontStyle.Italic);
+            this.label8.Location = new System.Drawing.Point(25, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(150, 59);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Count";
+            // 
             // FrmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(944, 622);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.InfoBox);
             this.Controls.Add(this.JudgeBox);
             this.Controls.Add(this.OPIDBox);
@@ -308,6 +345,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.JudgementBox)).EndInit();
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +375,9 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SetupPortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label Countlabel;
+        private System.Windows.Forms.Label label8;
     }
 }
 

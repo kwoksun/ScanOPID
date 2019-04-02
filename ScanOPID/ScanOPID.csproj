@@ -86,12 +86,6 @@
     <Compile Include="modBarCodeFile.cs" />
     <Compile Include="modFileWriteException.cs" />
     <Compile Include="modLogFile.cs" />
-    <Compile Include="frmMachineType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMachineType.Designer.cs">
-      <DependentUpon>frmMachineType.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,9 +100,6 @@
     <Compile Include="frmSetupPort.Designer.cs">
       <DependentUpon>frmSetupPort.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmMachineType.resx">
-      <DependentUpon>frmMachineType.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMainForm.resx">
       <DependentUpon>frmMainForm.cs</DependentUpon>
     </EmbeddedResource>

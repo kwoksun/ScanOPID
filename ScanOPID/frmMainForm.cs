@@ -8,6 +8,7 @@ namespace ScanOPID
     {
         private ModBarCodeFile barcode;
         private ModLogFile log;
+        private int count = 0;
         public FrmMainForm()
         {
             InitializeComponent();
@@ -52,6 +53,20 @@ namespace ScanOPID
                 status.Text = s;
             }
         }
+        private void CountUpdate(string s)
+        {
+            if (InvokeRequired)
+            {
+                Invoke((EventHandler)(delegate
+                {
+                    CountUpdate(s);
+                }));
+            }
+            else
+            {
+                Countlabel.Text = s;
+            }
+        }
         //串口接收缓冲区有数据时执行
         private void RcvData(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
@@ -66,6 +81,8 @@ namespace ScanOPID
                 //主界面Judgement更新
                 //JudgementBox.Image = Judgement.Images[1];
                 JudgementBox.Image = Properties.Resources.OK;
+                ChangeStatus("Normal");
+                CountUpdate((++count).ToString());
                 //上传数据
                 barcode.WriteBarCodeFile(opid, "1");
                 //写Log
@@ -84,11 +101,13 @@ namespace ScanOPID
             }
             catch (ModFileWriteException)
             {
+                MessageBox.Show("modfile exception");
                 //JudgementBox.Image = Judgement.Images[2];
                 JudgementBox.Image = Properties.Resources.NG;
             }
             catch(Exception)
             {
+                MessageBox.Show("exception");
                 //JudgementBox.Image = Judgement.Images[2];
                 JudgementBox.Image = Properties.Resources.NG;
             }
@@ -98,6 +117,7 @@ namespace ScanOPID
         {
             try
             {
+                Scanner.PortName = Properties.Settings.Default.ComPort;
                 Scanner.Open();
                 if (Scanner.IsOpen)
                 {
@@ -112,7 +132,6 @@ namespace ScanOPID
                 status.Text = "Conn Port NG";
                 MessageBox.Show(ex.Message);
             }
-            
         }
         //关闭程序时执行
         private void MainFormClosing(object sender, FormClosingEventArgs e)
@@ -130,7 +149,7 @@ namespace ScanOPID
             int marginY = StatusGB.Height - status.Height;
             status.Location = new Point(marginX / 2, marginY / 2 + StatusGB.Margin.Top);
         }
-
+        //退出按钮
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
